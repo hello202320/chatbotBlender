@@ -2,7 +2,7 @@ import gradio as gr
 import requests
 import os
 from dotenv import load_dotenv
-
+import time
 # Load environment variables from .env
 load_dotenv()
 
@@ -33,7 +33,9 @@ def bot(history):
 
     bot_message = response["generated_text"]
     history[-1][1] = bot_message
-
+    for character in bot_message:
+        yield history
+        time.sleep(0.05)
     
 
 with gr.Blocks() as demo:
