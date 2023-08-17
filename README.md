@@ -22,7 +22,7 @@ The BlenderBot Chatbot is a demonstration of using the Hugging Face BlenderBot m
 2. Create a virtual environment (optional but recommended).
 3. Install the required packages using `pip install -r requirements.txt`.
 4. Obtain your Hugging Face API token and store it in a `.senv` file at the project's root. The `.senv` file should contain: `HUGGING_FACE_API_TOKEN=your_actual_token_here`.
-5. Rename `.senv` to `.env'
+5. Rename `.senv` to `.env`
 
 ## Usage
 1. Run the `main.py` script:
